@@ -28,7 +28,6 @@ A complete RESTful API built with Node.js, Express, Sequelize (MySQL), and JWT-b
 ```
 ├── app.js
 ├── config
-│   └── config.js
 ├── controllers
 ├── middlewares
 ├── migrations
@@ -45,7 +44,7 @@ A complete RESTful API built with Node.js, Express, Sequelize (MySQL), and JWT-b
 
 ### 1. Clone the Repository
 ```bash
-git clone <your-github-repo-link>
+git clone https://github.com/priyanshunema/user-management.git
 cd user-management-api
 ```
 
@@ -55,11 +54,8 @@ npm install
 ```
 
 ### 3. Configure Environment Variables
-Create a `.env` file from `.env.example`
-```bash
-cp .env.example .env
-```
-Edit `.env` file:
+Create a `.env` file with following fields 
+ 
 ```
 PORT=5000
 DB_NAME=userdb
@@ -73,6 +69,7 @@ JWT_SECRET=your_jwt_secret
 
 ### 4. Run Migrations
 ```bash
+
 npx sequelize-cli db:migrate
 ```
 
@@ -99,7 +96,7 @@ Password: admin123
 ---
 
 ## 🧪 Postman Collection
-- [Download UserManagement.postman_collection.json](./UserManagement.postman_collection.json)
+- [Download UserManagement.postman_collection.json](./postman_collection.json)
 - Import into Postman
 
 ---
@@ -126,11 +123,6 @@ Password: admin123
 - All protected routes require `Authorization: Bearer <token>`
 - Admin access is needed for managing roles and listing all users
 
----
 
-## 📞 Contact
-For issues or contributions, raise an issue or submit a PR.
 
----
-
-> Developed with 💻 by [Your Name]
+> Developed with 💻 by Priyanshu Nema
